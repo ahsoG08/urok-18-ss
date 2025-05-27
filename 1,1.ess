@@ -1,0 +1,16 @@
+start
+new date number
+set date TIME
+new constNum number
+set constNum 31536000000
+new yearNow number
+set yearNow 1970
+
+loop year (date > constNum)	
+set date date - constNum
+set yearNow yearNow + 1
+end year
+
+? Реализован только вывод текущего года
+log number yearNow
+finish
